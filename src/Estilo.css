@@ -1,0 +1,130 @@
+body {
+  background: #f06d06;
+  color: white;
+}
+
+#quote-box{
+  padding: 20px;
+  overflow: hidden;
+  background:#111; 
+  width:45%;
+  /*margin:0 auto; ya no es necesario, porque esta centrado con otras props*/
+  border-radius:4px; 
+  
+  position: absolute;
+  top: 50%;  
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+
+.texto{
+  transition: all 0.5s ease;
+  display:block;
+  justify-content: center;
+}
+
+#text{
+  transition: all 0.5s ease;
+  display:flex;
+  justify-content:first baseline;
+  font-family:Tahoma, sans-serif;
+  font-size: 27px;
+  font-style:italic;
+  border-color:white;
+  transition: opacity 0.3s ease;
+  width: auto;
+  box-sizing: border-box;
+  white-space:inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#text.hidden {
+opacity: 0;
+transition: opacity 0.5s ease;
+}
+#author{
+  display: block;
+  margin-left:380px;
+  margin-right:20px;
+}
+
+.botones{
+  display: flex;
+ justify-content: space-between;
+}
+
+.botoncito{
+    display: flex;
+    background-color: #FF4500;
+    color: beige;
+    border: 1px solid white;
+    border-radius: 5px; 
+    cursor: pointer;
+    height:35px;
+    align-items: center;  /*centrar el texto del boton*/
+    justify-content: center;
+    margin-top:16px;
+    margin-left:400px;
+    margin-bottom:30px;
+    margin-right:10px;
+}
+
+
+.tumblr {
+  display: inline;
+  border-radius: 5px;
+  margin-left:5px ;
+  margin-right:8px;
+  margin-top: 15px;
+  background-color: #f06d06;
+  float:left;
+  height:20px ;
+  width: 17px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tweet{
+  display: inline; 
+  margin-right:1px;
+  margin-left:60px;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: #f06d06;
+  float:left;
+  width: 16px;
+  height:20px ;
+  padding:10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+a:link {
+color: white;
+}
+
+a:visited{
+color: white;
+}
+
+a:hover{
+transition: color 0.3s ease;
+color:#e51a4c;
+}
+
+a:active{
+color: white;
+}
+
+blockquote {
+  position: relative;
+  font-family: Tahoma, sans-serif;
+  font-size: 27px;
+  font-style: italic;
+  margin: 20px 20px 25px;
+}
+
