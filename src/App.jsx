@@ -101,11 +101,11 @@ class Boton extends React.Component {
       backgroundColors[this.state.colorAleatorio];
     const citaActual = citas[this.state.indiceAleatorio];
     return (
-      <div >
+      <div  id="quote-box">
         <Frase propiedad={citaActual} />
         <Autor propiedad={citaActual} />
         <Post propiedad={citaActual} />
-        <button onClick={this.handleClick} className="botoncito" >
+        <button id="new-quote" onClick={this.handleClick} className="botoncito" >
           New quote
         </button>
       </div>
